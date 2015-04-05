@@ -1,0 +1,56 @@
+﻿/*set navbar on-hover box color and set parameters for following navbar edits
+Will show navbar as white text on white background without this*/
+#topnavbar .nav li.static.shown > .menu-item, #topnavbar .nav li.static:hover > .menu-item {
+    background-color: #0072c6;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125) inset;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/*set topnav links text to blue (#0072c6)*/
+.nav.ms-core-listMenu-horizontalBox li.static > a{
+    color: #0072c6;
+    	
+
+
+}
+/*correct calendar view (Widgets will show on click of any date grid, add button will be out of place and barely visible without this)*/
+.ms-acal-vlink span.ms-addcolumn-span {
+    height: 16px;
+    min-height:16px;
+    width: 16px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    float:none;
+}
+/*set topnav edit links button text to grey (#666)*/
+.nav.ms-core-listMenu-horizontalBox .ms-navedit-editLinksText > span > .ms-metadata {
+    color: #666;
+}
+/*set topnav editable links text to blue (#0072c6)*/
+.nav.ms-core-listMenu-horizontalBox .ms-navedit-editLinksText,
+.nav.ms-core-listMenu-horizontalBox a.static.ms-navedit-dropNode,
+.nav.ms-core-listMenu-horizontalBox div.ms-navedit-hiddenAppendArea {
+    color: #0072c6;
+}
+
+/*bootstrap resets for SharePoint*/
+#sideNavBox {
+	display: none;
+}
+#suiteBarLeft, #suiteBarRight {
+	
+	line-height:22px !important;
+}
+
+.ms-core-listMenu-horizontalBox .additional-background.dynamic-children{
+	background-image: url("/_catalogs/masterpage/bootstrap/img/Down Arrow Custom.png");	
+}
+
+.siding:hover{
+	cursor: pointer;
+}
+
+#modalText {
+	width: 95%;
+}
